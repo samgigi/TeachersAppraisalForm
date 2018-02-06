@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teacher Performance Appraisal Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://docraptor.com/docraptor-1.0.0.js"></script>
+  <script>
+    var downloadPDF = function() {
+      DocRaptor.createAndDownloadDoc("YOUR_API_KEY_HERE", {
+        test: true, // test documents are free, but watermarked
+        type: "pdf",
+        document_content: document.querySelector('html').innerHTML, // use this page's HTML
+      })
+    }
+  </script>
+</head>
+<body>
+	<div class="container" id="content">
+		<form>
+			<center><p><u>TEACHER PERFORMANCE APPRAISAL FORM</u></p></center>
+			<br/>
+			<div class="row">	
+				<div class="info">
+					<div class="float-left margintop">
+						Date:<br/> 
+						Teacher's name:<br/> 
+						Class handled:<br/>	
+						Subject specialization:<br/> 
+						Subject Handled: 
+					</div>
+					<div class="float-right marginleft">
+						<input type="date" id="date" required><br/>
+						<input type="text" id="TN" required>
+						<label id="ltn"></label>
+						<br/>
+						<input type="text" id="CH" required><br/>
+						<input type="text" id="SS" required><br/>
+						<input type="text" id="SH" required>
+					</div>
+				</div>
+			</div><br/><br/>	
+			<div class="row">
+				<div class="float-left">
+					Rating Key:
+				</div>
+				<div class="float-right left-margin">
+					4 <span class="marginleft">Very good</span><br/>
+					3 <span class="marginleft">Good</span><br/>
+					2 <span class="marginleft">Average</span><br/>
+					1 <span class="marginleft">Below average</span><br/>
+					0 <span class="marginleft">Unsatisfactory</span><br/>
+				</div>
+			</div><br/><br/>
+			<div class="row">
+				<div class="table">
+					<table>
+						<tr>
+							<th></th>
+							<th>Teacher's skill/attribute</th>
+							<th>Rating</th>
+						</tr>
+						<tr>
+							<td class="num">1</td>
+							<td class="text">Communicational Clarity</td>
+							<td class="rating"><input type="number" id="1" max="5" min="1" name="" required></td>
+						</tr>
+						<tr>
+							<td class="num">2</td>
+							<td class="text">Listing of clear, realistic objectives attainable by children</td>
+							<td class="rating"><input type="number" id="2" max="5" min="1" name="" required></td>
+						</tr>
+						<tr>
+							<td class="num">3</td>
+							<td class="text">Chalkboard work</td>
+							<td class="rating"><input type="number" id="3" max="5" min="1" name="" required></td>
+						</tr>
+						<tr>
+							<td class="num">4</td>
+							<td class="text">Teacher pupil interaction that makes the lesson concept interesting to children</td>
+							<td class="rating"><input type="number" id="4" max="5" min="1" name="" required></td>
+						</tr>
+						<tr>
+							<td class="num">5</td>
+							<td class="text">
+								Appropriate eliciting strategies (such as brainstorming, group discussion and pupil initiated 
+								questioning) based on pupil's experience
+							</td>
+							<td class="rating"><input type="number" id="5" max="5" min="1" name="" required></td>
+						</tr>
+						<tr>
+							<td class="num">6</td>
+							<td class="text">Usage of whole class demos with teaching aids</td>
+							<td class="rating"><input type="number" id="6" max="5" min="1" name="" required></td>
+						</tr>
+						<tr>
+							<td class="num">7</td>
+							<td class="text">Use of group activities (with clear expectations)</td>
+							<td class="rating"><input type="number" id="7" max="5" min="1" name="" required></td>
+						</tr>
+						<tr>
+							<td class="num">8</td>
+							<td class="text">
+								Explaination of lesson concepts by using contextually relevant and concrete teaching learning materials (if this is not possible, use of multimedia teaching aids)
+							</td>
+							<td class="rating"><input type="number" id="8" max="5" min="1" name="" required></td>
+						</tr>
+						<tr>
+							<td class="num">9</td>
+							<td class="text">
+								Review of lesson concept using an effective Q A session (teacher initiated, pupil initiated or both)
+							</td>
+							<td class="rating"><input type="number" id="9" max="5" min="1" name="" required></td>
+						</tr>
+						<tr>
+							<td class="num">10</td>
+							<td class="text">Maintenance of classroom discipline</td>
+							<td class="rating"><input type="number" id="10" max="5" min="1" name="" required></td>
+						</tr>
+						<tr>
+							<td class="num">11</td>
+							<td class="text">Effective preperation and implementation of schemes of work *</td>
+							<td class="rating"><input type="number" id="11" max="5" min="1" name="" required></td>
+						</tr>
+						<tr>
+							<td class="num">12</td>
+							<td class="text">Effective preperation and implementation of Lesson plan *</td>
+							<td class="rating"><input type="number" id="12" max="5" min="1" name="" required></td>
+						</tr>
+						<tr>
+							<td class="num">13</td>
+							<td class="text">Marking of class work (with teacher's explanation)</td>
+							<td class="rating"><input type="number" id="13" max="5" min="1" name="" required></td>
+						</tr>
+						<tr>
+							<td class="num">14</td>
+							<td class="text">Marking of home work (with teacher's explanation)</td>
+							<td class="rating"><input type="number" id="14" max="5" min="1" name="" required></td>
+						</tr>
+						<tr>
+							<td class="num">15</td>
+							<td class="text">Remedial work</td>
+							<td class="rating"><input type="number" id="15" max="5" min="1" name="" required></td>
+						</tr>
+						<tr>
+							<td class="num">16</td>
+							<td class="text">Maintaining wall display of pupil's work</td>
+							<td class="rating"><input type="number" id="16" max="5" min="1" name="" required></td>
+						</tr>
+						<tr>
+							<td class="num">17</td>
+							<td class="text">Gender equity in all classroom processes</td>
+							<td class="rating"><input type="number" id="17" max="5" min="1" name="" required></td>
+						</tr>
+						<tr>
+							<td class="num">18</td>
+							<td class="text">Being sensitive to pupil's cognitive and emotional needs</td>
+							<td class="rating"><input type="number" id="18" max="5" min="1" name="" required></td>
+						</tr>
+						<tr>
+							<td class="num">19</td>
+							<td class="text">Maintenance of mark registers: Promptness, correctness and neatness</td>
+							<td class="rating"><input type="number" id="19" max="5" min="1" name="" required></td>
+						</tr>
+						<tr>
+							<td class="num">20</td>
+							<td class="text">40 minutes time management(Segmentation)</td>
+							<td class="rating"><input type="number" id="20" max="5" min="1" name="" required></td>
+						</tr>
+					</table>
+				</div>
+			</div><br/><br/>
+			<div class="row">
+				<div class="float-left">
+					Total score:
+				</div>
+				<div class="float-right total">
+					<input type="number" id="total">
+				</div>
+			</div><br/>
+			<div class="row">
+				[* These can be filled in the light of both classroom processes and the respective documents].<br/><br/>
+				Strong points about the teacher.
+			</div>	
+		</div><br/><br/>
+		<input type="submit" name="submit" value="Save">
+	</form>
+	<input id="pdf-button" type="button" value="Download PDF" onclick="downloadPDF()" /><br/><br/><br/><br/>
+</body>
+</html>

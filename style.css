@@ -1,0 +1,70 @@
+
+.row{
+	display: -webkit-box;
+  	display: -webkit-flex;
+  	display: -ms-flexbox;
+  	display:         flex;
+}
+
+.margintop{
+	margin-top: 5px;
+}
+
+.left-margin{
+	margin-left: 30px;
+}
+
+.marginleft{
+	margin-left: 10px;
+}
+
+.marginleft input{
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 1px solid;
+	width: 250px; 
+}
+
+.float-left{
+	float: left;
+}
+
+.float-right{
+	float: right;
+}
+
+.rating input{
+	width: 60px;
+	border: none;
+}
+
+.rating{
+	width: 20px;
+}
+
+.text{
+	width: 90%;
+}
+
+.num{
+	width: 5%;
+}
+
+.total input{
+	width: 60px;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 1px solid;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid black;
+    font-weight: lighter;
+}
